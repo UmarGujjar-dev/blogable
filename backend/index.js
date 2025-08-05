@@ -2,6 +2,8 @@ const express = require('express');
 const connectDB = require('./settings/config/db');
 const blogRoutes = require('./routes/blogRoutes');
 
+
+
 const app = express();
 app.use(express.json());
 
@@ -18,6 +20,6 @@ app.get('/', (req, res) => {
   res.send('API is working');
 });
 
-app.listen(5000, () => {
-  console.log('Server running on http://localhost:5000');
+app.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
 });
